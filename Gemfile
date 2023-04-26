@@ -11,4 +11,4 @@ gem "rspec", "~> 3.0"
 
 gem "rubocop", "~> 1.21"
 
-gem "ruby-debug-ide"
+gem 'ruby-debug-ide', '~> 0.7.3'
