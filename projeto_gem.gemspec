@@ -3,21 +3,21 @@
 require_relative "lib/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "projeto_gem"
+  spec.name = "rspec_algoritimos_testes"
   spec.version = ProjetoGem::VERSION
   spec.authors = ["ricardofelipe7"]
   spec.email = ["rikrdoofelipe@outlook.com"]
 
   spec.summary = "gem ricardo"
   spec.description = "testando configuçôes gem"
-  spec.homepage = "https://github.com/ricardofelipe7/projeto_gem"
+  spec.homepage = "https://github.com/ricardofelipe7/rspec_algoritimos_testes"
   spec.required_ruby_version = ">= 3.0.2"
 
-  spec.metadata["allowed_push_host"] = "https://github.com/ricardofelipe7/projeto_gem"
+  spec.metadata["allowed_push_host"] = "https://github.com/ricardofelipe7/rspec_algoritimos_testes"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/ricardofelipe7/projeto_gem"
-  spec.metadata["changelog_uri"] = "https://github.com/ricardofelipe7/projeto_gem"
+  spec.metadata["source_code_uri"] = "https://github.com/ricardofelipe7/rspec_algoritimos_testes"
+  spec.metadata["changelog_uri"] = "https://github.com/ricardofelipe7/rspec_algoritimos_testes"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
