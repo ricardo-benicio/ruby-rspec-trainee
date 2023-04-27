@@ -4,5 +4,6 @@ require_relative "projeto_gem"
 
 module ProjetoGem
   class Error < StandardError; end
+
   # Your code goes here...
 end
