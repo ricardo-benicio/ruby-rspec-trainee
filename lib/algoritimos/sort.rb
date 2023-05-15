@@ -4,7 +4,7 @@ class Sort
         @array = array
     end
 
-    def self.buble_sort(array)
+    def self.buble(array)
         n = array.size
         loop do
             swapped = false
@@ -17,5 +17,9 @@ class Sort
             break unless swapped
         end
         array
+    end
+
+    def self.selection(array)
+        
     end
 end
