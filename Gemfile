@@ -10,3 +10,5 @@ gem "rake", "~> 13.0"
 gem "rspec", "~> 3.0"
 
 gem 'ruby-debug-ide', '~> 0.7.3'
+
+gem 'rubocop'
