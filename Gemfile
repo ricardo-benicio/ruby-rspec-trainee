@@ -2,13 +2,10 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in projeto_gem.gemspec
-gemspec
+gem 'rspec'
 
-gem "rake", "~> 13.0"
+gem 'ruby-debug-ide'
 
-gem "rspec", "~> 3.0"
+gem 'guard'
 
-gem 'ruby-debug-ide', '~> 0.7.3'
-
-gem 'rubocop'
+gem 'guard-rspec', require: false

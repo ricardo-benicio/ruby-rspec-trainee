@@ -45,8 +45,4 @@ class Sort
     end
     @array
   end
-
-  def quick(left, right)
-
-  end
 end
