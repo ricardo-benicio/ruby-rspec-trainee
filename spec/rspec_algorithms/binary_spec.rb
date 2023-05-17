@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'algoritimos/binary_search'
+require 'algorithms/binary_search'
 
 RSpec.describe BinarySearch do
   context 'Binary search' do
