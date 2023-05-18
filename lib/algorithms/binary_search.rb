@@ -1,21 +1,23 @@
 # frozen_string_literal: true
 
 class BinarySearch
-    def search(arr, element, first, last)
-      if last >= first
-        mid = (first + last) / 2
-        if element == arr[mid]
-          mid
-        elsif element < arr[mid]
-          search(arr, element, first, mid - 1)
-        else
-          search(arr, element, mid + 1, last)
-        end
+  def initialize(array)
+    @array = array
+  end
+  
+  attr_accessor :first, :last
+
+  def search(element)
+    if first <= last
+      mid = (first + last) / 2
+      if element == @array[mid]
+        mid
+      elsif element < arr[mid]
+        search(@array, element, first, mid - 1)
       else
-        -1
+        search(@array, element, mid + 1, last)
       end
     end
+    -1
+  end
 end
-
-r1 = BinarySearch.new
-puts r1.search([0,1,2,3,4], 2, 0, 4)
