@@ -2,25 +2,13 @@ require 'spec_helper'
 require 'algorithms/binary_search'
 
 RSpec.describe BinarySearch do
-  context 'Binary search' do
+  context 'Procurar número' do
     it 'Elemento encontrado' do
-      arr = [5, 7, 9, 15, 34, 65]
-      element = 34
-      last = arr.length - 1
+      array = [5, 7, 9, 15, 34, 65]
 
-      result = BinarySearch.new.search(arr, element, 0, last)
+      result = BinarySearch.new(array)
 
-      expect(result).to eq(4)
-    end
-
-    it 'Elemento não encontrado' do
-      arr = [5, 7, 9, 15, 34, 65]
-      element = 15
-      last = arr.length - 1
-
-      result = BinarySearch.new.search(arr, element, 0, last)
-
-      expect(result).to eq(3)
+      expect(result.search(15)).to eq(3)
     end
   end
 end

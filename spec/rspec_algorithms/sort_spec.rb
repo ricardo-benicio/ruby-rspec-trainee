@@ -14,13 +14,13 @@ context 'Comparator arrays' do
 
     describe 'selection_sort' do
       it 'true sorted array' do
-        expect(Sort.new(unsorted_array).selection).to eq(sorted_array)
+        expect(Sort.new(unsorted_array).selection).to eql(sorted_array)
       end
     end
 
     describe 'insertion_sort' do
       it 'true sorted array' do
-        expect(Sort.new(unsorted_array).insertion).to eq(sorted_array)
+        expect(Sort.new(unsorted_array).insertion).to eql(sorted_array)
       end
     end
   end
