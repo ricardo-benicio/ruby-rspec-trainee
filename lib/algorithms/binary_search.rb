@@ -1,23 +1,22 @@
-# frozen_string_literal: true
 
-class BinarySearch
+class Search
   def initialize(array)
     @array = array
   end
-  
-  attr_accessor :first, :last
 
-  def search(element)
-    if first <= last
-      mid = (first + last) / 2
-      if element == @array[mid]
-        mid
-      elsif element < arr[mid]
-        search(@array, element, first, mid - 1)
-      else
-        search(@array, element, mid + 1, last)
-      end
+  def mid
+
+  end
+
+  def binary(target)
+    low = 0
+    high = @array.length
+    if @array[mid] == target
+      mid
+    elsif @array[mid] < target
+      low = mid + 1
+    else
+      high = mid - 1
     end
-    -1
   end
 end
