@@ -1,14 +1,20 @@
 require 'spec_helper'
-require 'algorithms/binary_search'
+require 'search_algorithms/application'
+require 'search_algorithms/run'
 
-RSpec.describe Search do
-  context 'Procurar número' do
-    it 'Elemento encontrado' do
-      array = [5, 7, 9, 15, 34, 65]
+RSpec.describe Run do
+  context 'Algoritimo procurador Linear' do
+    array = [5, 7, 9, 15, 34, 65]
+    target = 15
 
-      result = Search.new(array)
+    it 'Target encontrado(binary)' do
+      
+      expect(Run.new(array, target).binary)
+    end
 
-      expect(result.binary(15)).to eq(3)
+    it 'Target encontrado(linear)' do
+      
+      expect(Run.new(array, target).linear)
     end
   end
 end

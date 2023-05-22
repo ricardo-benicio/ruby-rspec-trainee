@@ -6,6 +6,6 @@ gem 'rspec'
 
 gem 'ruby-debug-ide'
 
-gem 'guard'
+#gem 'guard'
 
-gem 'guard-rspec', require: false
+#gem 'guard-rspec', require: false
