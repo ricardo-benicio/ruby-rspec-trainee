@@ -1,4 +1,5 @@
-require "algorithms/sort"
+require "sort_algorithms/application"
+require 'sort_algorithms/run'
 require "spec_helper"
 
 RSpec.describe Sort do
@@ -8,19 +9,19 @@ RSpec.describe Sort do
 context 'Comparator arrays' do 
   describe 'bubble_sort' do
       it 'true sorted array' do
-        expect(Sort.new(unsorted_array).bubble).to eql(sorted_array)
+        expect(Run::Sort.new(unsorted_array).bubble).to eql(sorted_array)
       end
     end
 
     describe 'selection_sort' do
       it 'true sorted array' do
-        expect(Sort.new(unsorted_array).selection).to eql(sorted_array)
+        expect(Run.new(unsorted_array).selection).to eql(sorted_array)
       end
     end
 
     describe 'insertion_sort' do
       it 'true sorted array' do
-        expect(Sort.new(unsorted_array).insertion).to eql(sorted_array)
+        expect(Run.new(unsorted_array).insertion).to eql(sorted_array)
       end
     end
   end
