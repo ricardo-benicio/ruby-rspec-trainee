@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require 'spec_helper'
-require 'algorithms/paper_cut'
+require 'paper_cut'
 
 RSpec.describe PaperCut do
 

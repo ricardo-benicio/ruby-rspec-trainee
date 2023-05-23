@@ -1,9 +1,6 @@
-require 'search_algorithms/application'
-
-class Run < Search
+class Search
     def initialize(array, target)
         @array = array
         @target = target
     end
-
 end
